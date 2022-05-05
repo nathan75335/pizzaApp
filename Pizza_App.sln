@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza_App", "Pizza_App\Pizza_App.csproj", "{1E18C1A9-744B-4133-8655-A9437A0DDF6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaClasses", "PizzaClasses\PizzaClasses.csproj", "{C7650B31-05B9-4DE9-9AEA-696DFF7F0463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pictures", "Pictures", "{89C13717-AF82-4DF5-B180-1F59839C05E9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg = ..\..\..\Downloads\aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg
+		..\..\..\Downloads\brenan-greene-HPZs4EXRFSU-unsplash.jpg = ..\..\..\Downloads\brenan-greene-HPZs4EXRFSU-unsplash.jpg
+		..\..\..\Downloads\kelvin-t-AcA8moIiD3g-unsplash.jpg = ..\..\..\Downloads\kelvin-t-AcA8moIiD3g-unsplash.jpg
+		..\..\..\Downloads\pexels-polina-tankilevitch-4109137.jpg = ..\..\..\Downloads\pexels-polina-tankilevitch-4109137.jpg
+		..\..\..\Downloads\pizza-4912871.png = ..\..\..\Downloads\pizza-4912871.png
+		..\..\..\Downloads\pizza-4952508.jpg = ..\..\..\Downloads\pizza-4952508.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "File", "File", "{FB00B90A-EADC-4E48-8512-DD51C1CFF3B9}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Pizza.json = ..\..\Pizza.json
+		..\..\User.json = ..\..\User.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestPizzaProject", "UnitTestPizzaProject\UnitTestPizzaProject.csproj", "{E24007DC-DCA2-4C21-8359-48CE0CB07F31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E18C1A9-744B-4133-8655-A9437A0DDF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E18C1A9-744B-4133-8655-A9437A0DDF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E18C1A9-744B-4133-8655-A9437A0DDF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E18C1A9-744B-4133-8655-A9437A0DDF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7650B31-05B9-4DE9-9AEA-696DFF7F0463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7650B31-05B9-4DE9-9AEA-696DFF7F0463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7650B31-05B9-4DE9-9AEA-696DFF7F0463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7650B31-05B9-4DE9-9AEA-696DFF7F0463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24007DC-DCA2-4C21-8359-48CE0CB07F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24007DC-DCA2-4C21-8359-48CE0CB07F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24007DC-DCA2-4C21-8359-48CE0CB07F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24007DC-DCA2-4C21-8359-48CE0CB07F31}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01F5AEEE-2FE6-433E-8863-3ABC148C447E}
+	EndGlobalSection
+EndGlobal

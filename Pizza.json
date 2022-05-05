@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "Pepperoni",
+    "DescriptionOfPizza": "Fait avec 1gr de pain et de la farine de moutarde et surtout mangez bien.",
+    "Price": 13.0,
+    "Picture": "C:\\Users\\NATHAN KALENGA\\Downloads\\aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg",
+    "CreatedDate": "0001-01-01T00:00:00"
+  },
+  {
+    "Name": "Marguerita",
+    "DescriptionOfPizza": "De la saveur dans l'air . Fait a base de sel et de mer et de cotelletes de porc.",
+    "Price": 14.0,
+    "Picture": "C:\\Users\\NATHAN KALENGA\\Downloads\\brenan-greene-HPZs4EXRFSU-unsplash.jpg",
+    "CreatedDate": "0001-01-01T00:00:00"
+  },
+  {
+    "Name": "Village Pizza",
+    "DescriptionOfPizza": "Baguette magique fait a partir de la viande de vache et de la sauce de la poule.",
+    "Price": 18.56,
+    "Picture": "C:\\Users\\NATHAN KALENGA\\Downloads\\pexels-polina-tankilevitch-4109137.jpg",
+    "CreatedDate": "0001-01-01T00:00:00"
+  }
+]
