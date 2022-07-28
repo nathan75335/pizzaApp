@@ -14,6 +14,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -80,9 +81,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractConverter.cs" />
     <Compile Include="AdministratorAccount.cs" />
     <Compile Include="AdministratorDaoPizza.cs" />
     <Compile Include="DataValidation.cs" />
+    <Compile Include="DecoratorPizza.cs" />
+    <Compile Include="FactoryMethods.cs" />
+    <Compile Include="IAdministratorDaoPizza.cs" />
+    <Compile Include="IPizzaDaoComponents.cs" />
+    <Compile Include="IUserDao.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderDao.cs" />
+    <Compile Include="PizzaComponent.cs" />
+    <Compile Include="PizzaDaoComponents.cs" />
+    <Compile Include="PizzaWithComponent.cs" />
     <Compile Include="UserDao.cs" />
     <Compile Include="IPizza.cs" />
     <Compile Include="Pizza.cs" />
@@ -91,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="ClassDiagram5.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

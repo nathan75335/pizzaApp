@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PizzaClasses.AbstractConverter&lt;TReal, TAbstract&gt;" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>AbstractConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.AdministratorAccount" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAiAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdministratorAccount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.AdministratorDaoPizza" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAEBAAAACAAAAAAAAAAIAAABAAAAAQg=</HashCode>
+      <FileName>AdministratorDaoPizza.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PizzaClasses.DataValidation" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAEAIAAAAAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataValidation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.DecoratorPizza">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAQAAAIAAAAgAAAQAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>DecoratorPizza.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PizzaClasses.FactoryMethods" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAACAAEA=</HashCode>
+      <FileName>FactoryMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.Order" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAAgAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.OrderDao" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAggAAAAAAAAAAAAAQAAAAAAAAAAAAg=</HashCode>
+      <FileName>OrderDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.Pizza" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAQAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PizzaClasses.PizzaComponent" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.PizzaDaoComponents" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAABAAAAIAAAAAAAAAQAAIAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>PizzaDaoComponents.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PizzaClasses.PizzaWithComponent">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaWithComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.User" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaClasses.UserDao" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAIAAAAAAAAAgAAIAAAAIAAAAAAEAAAAAAACAg=</HashCode>
+      <FileName>UserDao.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="PizzaClasses.IAdministratorDaoPizza" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAABAAAACAAAAAAAAAAIAAABAAAAAQg=</HashCode>
+      <FileName>IAdministratorDaoPizza.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaClasses.IPizza" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAQAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPizza.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaClasses.IPizzaDaoComponents" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAAAAAIAAAAAAAAAQAAIAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>IPizzaDaoComponents.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaClasses.IUserDao" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAIAAAAAAAAAgAAIAAAAIAAAAAAEAAAAAAACAg=</HashCode>
+      <FileName>IUserDao.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

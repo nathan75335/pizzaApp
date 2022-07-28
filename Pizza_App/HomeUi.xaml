@@ -10,9 +10,9 @@
       Title="HomeUi" >
 
     <Grid>
-        <ListBox x:Name="PizzaMenu"  VerticalAlignment="Top" HorizontalAlignment="Center"  Height="500" Width="1100"
+        <ListBox x:Name="PizzaMenu"  VerticalAlignment="Top" HorizontalAlignment="Center"  Height="550" Width="1100"
                  ItemsSource="{Binding}"
-                 SelectionMode="Single" SelectionChanged="PizzaMenu_SelectionChanged" Margin="0 10 0 0" >
+                 SelectionMode="Single" SelectionChanged="PizzaMenu_SelectionChanged" >
             <ListBox.ItemTemplate>
                 <DataTemplate >
                     <Grid Width="320" Height="300" >
@@ -35,7 +35,6 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
         </ListBox>
-        <CheckBox x:Name="CheckerUpdater" Content="Add A Description" Foreground="Yellow" FontSize="20" 
-                  VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="15"/>
+        
     </Grid>
 </Page>

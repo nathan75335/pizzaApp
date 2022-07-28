@@ -29,10 +29,17 @@ namespace Pizza_App
         {
             Application.Current.MainWindow.Close();
         }
+        /// <summary>
+        /// function for the menu of the administrator
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void FloatBar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            //if the administrator select the first Menu
             if (FloatBar.SelectedIndex == 1)
             {
+                //loading the home to the frame that is the form
                 var window = Application.Current.MainWindow as MainWindow;
                 window.StackPanelOrder.Visibility = Visibility.Hidden;
                 FrameUser.Content = new HomeAdministratorUi();
@@ -47,13 +54,30 @@ namespace Pizza_App
                 var window = Application.Current.MainWindow as MainWindow;
                 window.StackPanelOrder.Visibility = Visibility.Visible;
                 FrameUser.Content = null;
+            }else if(FloatBar.SelectedIndex == 3)
+            {
+                var window = Application.Current.MainWindow as MainWindow;
+                window.StackPanelOrder.Visibility = Visibility.Hidden;
+                FrameUser.Content = new RedactPizzaComponent();
+            }
+            else if (FloatBar.SelectedIndex == 4)
+            {
+                var window = Application.Current.MainWindow as MainWindow;
+                window.StackPanelOrder.Visibility = Visibility.Hidden;
+                FrameUser.Content = new NewsUi();
             }
         }
-
+        //unload the administrator page from the frame
         private void DeconnectionButton_Click(object sender, RoutedEventArgs e)
         {
             var window = Application.Current.MainWindow as MainWindow;
             window.MainFrame.Content = null;
+        }
+
+        private void ButtonMinimized_Click(object sender, RoutedEventArgs e)
+        {
+            var window = Application.Current.MainWindow as MainWindow;
+            window.WindowState = WindowState.Minimized;
         }
     }
 }

@@ -16,6 +16,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -97,6 +98,12 @@
     <Compile Include="AdministratorUi.xaml.cs">
       <DependentUpon>AdministratorUi.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Component1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeAdministratorUi.xaml.cs">
       <DependentUpon>HomeAdministratorUi.xaml</DependentUpon>
     </Compile>
@@ -109,11 +116,17 @@
     <Compile Include="ListOfOrder.xaml.cs">
       <DependentUpon>ListOfOrder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MessageUI.xaml.cs">
-      <DependentUpon>MessageUI.xaml</DependentUpon>
+    <Compile Include="NewsUi.xaml.cs">
+      <DependentUpon>NewsUi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RedactComponentAdmin.xaml.cs">
+      <DependentUpon>RedactComponentAdmin.xaml</DependentUpon>
     </Compile>
     <Compile Include="RedactPizza.xaml.cs">
       <DependentUpon>RedactPizza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RedactPizzaComponent.xaml.cs">
+      <DependentUpon>RedactPizzaComponent.xaml</DependentUpon>
     </Compile>
     <Compile Include="TrashUi.xaml.cs">
       <DependentUpon>TrashUi.xaml</DependentUpon>
@@ -163,11 +176,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MessageUI.xaml">
+    <Page Include="NewsUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedactComponentAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RedactPizza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedactPizzaComponent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -21,7 +21,7 @@ namespace Pizza_App
     /// </summary>
     public partial class HomeAdministratorUi : Page
     {
-        AdministratorDaoPizza pizzaDao = new AdministratorDaoPizza();
+        IAdministratorDaoPizza pizzaDao = FactoryMethods.GetAdministratorDaoObject();
         public HomeAdministratorUi()
         {
             InitializeComponent();
@@ -32,6 +32,13 @@ namespace Pizza_App
         private void PizzaMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var pizza = PizzaMenu.SelectedItem as Pizza;
+            var redactPizza = new RedactPizza(pizza);
+            redactPizza.Show();
+        }
+
+        private void ButtonAdd_Click(object sender, RoutedEventArgs e)
+        {
+            Pizza pizza = new Pizza ();
             var redactPizza = new RedactPizza(pizza);
             redactPizza.Show();
         }

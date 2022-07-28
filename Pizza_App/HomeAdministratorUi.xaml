@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Pizza_App"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       d:DesignHeight="580" d:DesignWidth="1200"
       Background="#171717"
@@ -35,5 +36,9 @@
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
         </ListBox>
+        <Button x:Name="ButtonAdd" VerticalAlignment="Top" HorizontalAlignment="Right" Height="50" Width="50" Padding="0"
+                Click="ButtonAdd_Click" >
+            <materialDesign:PackIcon Kind="Add" Foreground="Yellow" Width="50" Height="50" />
+        </Button>
     </Grid>
 </Page>

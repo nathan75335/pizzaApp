@@ -134,6 +134,9 @@ namespace Pizza_App
               
             else if (FloatBar.SelectedIndex == 3)
                 HomeFrame.Content = null;
+            else if (FloatBar.SelectedIndex == 4)
+
+                HomeFrame.Content = new NewsUi();
         }
 
         private void ButtonOrder_Click(object sender, RoutedEventArgs e)
@@ -146,5 +149,15 @@ namespace Pizza_App
             Application.Current.Shutdown();
         }
 
+        private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            var window = Application.Current.MainWindow as MainWindow;
+            window.WindowState = WindowState.Minimized;
+        }
+
+        private void ButtonExtend_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }

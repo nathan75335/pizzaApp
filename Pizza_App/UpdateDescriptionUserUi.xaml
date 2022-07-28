@@ -12,12 +12,16 @@
     <Grid>
         <TextBlock FontFamily="Ravie" FontSize="25" 
                    Foreground="Yellow" HorizontalAlignment="Center" Text="Pizza Home" Margin="0 0 0 20"/>
-        <TextBlock FontSize="20" Foreground="Yellow" Text="Add Description :" VerticalAlignment="Center"
-                   Margin="30 0 0 170"/>
-        <TextBox BorderBrush="Yellow" BorderThickness="1.5" Width="430" Height="110"
-                 Margin="0" FontSize="15" Foreground="White" x:Name="TextBoxUpdateDescription">
-         
-        </TextBox>
+        <TextBlock FontSize="20" Foreground="Yellow" Text="Add An Ingredient " VerticalAlignment="Center"
+                   Margin="30 0 0 170" HorizontalAlignment="Center"/>
+        <ComboBox Height="30" Width="400" ItemsSource="{Binding Path=ComponentsOne}" Background="Gray" Foreground="Black"
+                  x:Name="ComboBoxComponentPizza" Margin="0 0 0 50" FontSize="13" DisplayMemberPath="Name  " >
+            
+        </ComboBox>
+        <Button x:Name="ButtonAddNewComponent" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0 110 0 0" Padding="0"
+                Click="ButtonAddNewComponent_Click" Width="40" Height="40" Background="Transparent" Cursor="Hand">
+            <materialDesign:PackIcon Kind="Add" Width="40" Height="40" Foreground="Yellow"/>
+        </Button>
         <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="100" Height="50" Background="Yellow"
                 Foreground="Black" Content="Next" FontSize="20" materialDesign:ButtonAssist.CornerRadius="10"
                 Margin="0 0 0 20" x:Name="ButtonNext" Click="ButtonNext_Click"/>

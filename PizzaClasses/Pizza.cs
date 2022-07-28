@@ -7,27 +7,26 @@ using Newtonsoft.Json;
 
 namespace PizzaClasses
 {
+    
     public class Pizza : IPizza
     {
+        /// <summary>
+        /// The Name of Pizza
+        /// </summary>
         public string Name { get; set; }
-
+        /// <summary>
+        /// the Description of the ingredients of the pizza
+        /// </summary>
         public string DescriptionOfPizza { get; set; }
-
+        /// <summary>
+        /// the price of pizza
+        /// </summary>
         public decimal Price { get; set; }
-
+        /// <summary>
+        /// the link of the picture
+        /// </summary>
         public string Picture { get; set; }
-
-        public DateTime CreatedDate { get; set; }
-
-        public Pizza(string name, string descriptionOfPizza, decimal price, string picture , DateTime createdDate)
-        {
-            Name = name;
-            DescriptionOfPizza = descriptionOfPizza;
-            Price = price;
-            Picture = picture;
-            CreatedDate = createdDate;
-        }
-
+       
         [JsonConstructor]
         public Pizza(string name  , string descriptionOfPizza  , decimal price  , string picture )
         {
@@ -35,6 +34,10 @@ namespace PizzaClasses
             DescriptionOfPizza = descriptionOfPizza;
             Price = price;
             Picture = picture;
+        }
+        public Pizza()
+        {
+
         }
 
     }

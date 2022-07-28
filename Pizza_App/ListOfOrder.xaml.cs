@@ -21,21 +21,17 @@ namespace Pizza_App
     /// </summary>
     public partial class ListOfOrder : Page
     {
-        UserDao adminDao = new UserDao();
+        OrderDao orderDao = new OrderDao();
         public ListOfOrder()
         {
             InitializeComponent();
-            adminDao.LoadDataFromJsonFile();
-            var users = (from user in adminDao.accounts
-                        from pizza in user.pizzas
-                        orderby pizza.CreatedDate.Date 
-                        orderby pizza.Price
-                        select pizza).ToList();
+            orderDao.LoadOrderFromFile();
+            var orders = (from order in orderDao.orders
+                        orderby order.TimeOfOrder
+                        orderby order.pizza.Price
+                        select order).ToList();
 
-            /*var pizzas = (from user in users
-                         select user.pizzas).ToList();*/
-                         
-            DataGridListOfOrder.ItemsSource = users;
+            DataGridListOfOrder.DataContext = orders;
         }
     }
 }

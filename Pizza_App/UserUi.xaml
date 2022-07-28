@@ -12,7 +12,8 @@
     <Grid>
         <Grid Height="70" HorizontalAlignment="Center" Width="1200"  VerticalAlignment="Top" Background="#171717" >
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" >
-                <Button Width ="30" Height="30" Margin="5 0 0 0" HorizontalAlignment="Center" Background="{x:Null}" VerticalAlignment="Center" Padding="0" BorderBrush="{x:Null}">
+                <Button Width ="30" Height="30" Margin="5 0 0 0" HorizontalAlignment="Center" Background="{x:Null}" VerticalAlignment="Center" Padding="0" BorderBrush="{x:Null}" Cursor="Hand"
+                        x:Name="ButtonMinimized" Click="ButtonMinimized_Click">
                     <materialDesign:PackIcon Kind="Minus" Foreground="White" />
                 </Button>
                 <Button Margin="5 0 0 0" Width ="30" Height="30" HorizontalAlignment="Center" Background="{x:Null}" VerticalAlignment="Center" Padding="0" BorderBrush="{x:Null}">
@@ -37,7 +38,7 @@
                 </Button>
                 <Ellipse Stroke="Yellow" StrokeThickness="1" Height="60" Width="60" >
                     <Ellipse.Fill>
-                        <ImageBrush ImageSource="C:\Users\NATHAN KALENGA\Downloads\aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg"/>
+                        <ImageBrush ImageSource="C:\Users\joyce\OneDrive\Bureau\CoursovaiaRabota\WaterKalubi\ivan-torres-MQUqbmszGGM-unsplash.jpg"/>
                     </Ellipse.Fill>
                 </Ellipse>
                 <TextBlock x:Name ="UserName" Text="User120" Foreground="White" VerticalAlignment="Center" FontSize="20" Margin="10"/>
@@ -49,7 +50,7 @@
                 <Ellipse Stroke="White" StrokeThickness="1" Height="70" Width="70"
                  VerticalAlignment="top">
                     <Ellipse.Fill >
-                        <ImageBrush ImageSource="C:\Users\NATHAN KALENGA\Downloads\pizza-4912871.png" Stretch="Fill" />
+                        <ImageBrush ImageSource="C:\Users\joyce\OneDrive\Bureau\CoursovaiaRabota\WaterKalubi\pizza-4912871.png" Stretch="Fill" />
                     </Ellipse.Fill>
                 </Ellipse>
             </StackPanel>

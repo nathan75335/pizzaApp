@@ -21,8 +21,8 @@ namespace Pizza_App
     /// </summary>
     public partial class HomeUi : Page
     {
-        AdministratorDaoPizza pizzaDao = new AdministratorDaoPizza();
-        UserDao userDao = new UserDao();
+        IAdministratorDaoPizza pizzaDao = FactoryMethods.GetAdministratorDaoObject();
+        IUserDao userDao = FactoryMethods.GetUserDaoObject();
         private string UserId { get; set; }
 
         public HomeUi(string userId)
@@ -36,19 +36,51 @@ namespace Pizza_App
        
         private void PizzaMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var pizza = PizzaMenu.SelectedItem as Pizza;
-            if (CheckerUpdater.IsChecked == false)
-            {   
-                pizza.CreatedDate = DateTime.Now;
-                var user = new User(UserId, null);
-                user.pizzas.Add(pizza);
-                bool test = userDao.UpdateUserByAddingPizza(user);
-                if (test == true)
-                    MessageBox.Show("Success", $"You Bougth {pizza.Name}");
-            }else
+            var pizza = PizzaMenu.SelectedItem as IPizza;
+
+            MessageBoxResult result = MessageBox.Show("Do You Want To Add this Pizza To The Trash ? " , "Pizza Buy" , MessageBoxButton.YesNo);
+
+            switch (result)
             {
-                var updateUI = new UpdateDescriptionUserUi(pizza);
-                updateUI.Show();
+                case MessageBoxResult.No:
+                    MessageBox.Show("Oups ....", "Pizza Buy");
+                    break;
+                case MessageBoxResult.Yes:
+                    MessageBoxResult resultAddIng = MessageBox.Show("Do You Want Add Ingredients ?", "Pizza Buy", MessageBoxButton.YesNo);
+                    switch (resultAddIng)
+                    {
+                        case MessageBoxResult.Yes:
+                            //Ajouter le user
+                            var updateDescriptionUser = new UpdateDescriptionUserUi(new User(UserId , null) , pizza);
+
+                            updateDescriptionUser.Show();
+
+                            break;
+
+                        case MessageBoxResult.No:
+
+                            var user = new User(UserId, null); 
+
+                            user.pizzas.Add(pizza);
+
+                            var test = userDao.UpdateUserByAddingPizza(user);
+
+                            if (test == true)
+                            {
+                                MessageBox.Show("Successfully Added");
+                                userDao.DeletePizzaFromPanel(user, pizza);
+                                var window = Application.Current.MainWindow as MainWindow;
+                                window.MainFrame.Refresh();
+                            }
+
+                            else
+
+                                MessageBox.Show("Oups This Couldn't be Added to Your Trash !!!");
+
+                            break;
+
+                    }
+                    break;
             }
         }
     }

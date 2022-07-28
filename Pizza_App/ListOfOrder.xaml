@@ -15,11 +15,11 @@
                   ItemsSource="{Binding}" AutoGenerateColumns="False" Background="#171717" Foreground="White"
                   x:Name="DataGridListOfOrder" >
             <DataGrid.Columns>
-                <!--   <DataGridTextColumn Width="*" Header="UserId" Binding="{Binding UserId}"  /> -->
-                <DataGridTextColumn Width="*" Header="Name" Binding="{Binding Name}"  />
-                <DataGridTextColumn Width="*" Header="Price $" Binding="{Binding Price}" />
-                <DataGridTextColumn Width="*" Header="Description Of Pizza" Binding="{Binding DescriptionOfPizza}" />
-                <DataGridTextColumn Width="*" Header="Date Of Order" Binding="{Binding CreatedDate ,StringFormat= {}{0:HH:mm} }" />
+                <DataGridTextColumn Width="*" Header="UserId" Binding="{Binding UserId}"  />
+                <DataGridTextColumn Width="*" Header="Name" Binding="{Binding pizza.Name}"  />
+                <DataGridTextColumn Width="*" Header="Price $" Binding="{Binding pizza.Price}" />
+                <DataGridTextColumn Width="*" Header="Description Of Pizza" Binding="{Binding pizza.DescriptionOfPizza}" />
+                <DataGridTextColumn Width="*" Header="Date Of Order" Binding="{Binding TimeOfOrder ,StringFormat= {}{0:HH:mm} }" />
             </DataGrid.Columns>
             <DataGrid.Resources>
                 <Style  TargetType="{x:Type DataGridColumnHeader}">

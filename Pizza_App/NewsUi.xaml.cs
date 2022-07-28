@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Pizza_App
 {
     /// <summary>
-    /// Логика взаимодействия для MessageUI.xaml
+    /// Логика взаимодействия для NewsUi.xaml
     /// </summary>
-    public partial class MessageUI : Window
+    public partial class NewsUi : Page
     {
-        public MessageUI()
+        public NewsUi()
         {
             InitializeComponent();
-        }
-
-        private void CloseButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

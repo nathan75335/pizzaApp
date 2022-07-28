@@ -49,12 +49,25 @@ namespace Pizza_App
                 window.StackPanelOrder.Visibility = Visibility.Visible;
                 FrameUser.Content = null;
             }
+            else if (FloatBar.SelectedIndex == 4)
+            {
+                var window = Application.Current.MainWindow as MainWindow;
+                window.StackPanelOrder.Visibility = Visibility.Hidden;
+                FrameUser.Content = new NewsUi();
+            }
+
         }
 
         private void DeconnectionButton_Click(object sender, RoutedEventArgs e)
         {
             var window = Application.Current.MainWindow as MainWindow;
             window.MainFrame.Content = null;
+        }
+
+        private void ButtonMinimized_Click(object sender, RoutedEventArgs e)
+        {
+            var window = Application.Current.MainWindow as MainWindow;
+            window.WindowState = WindowState.Minimized;
         }
     }
 }

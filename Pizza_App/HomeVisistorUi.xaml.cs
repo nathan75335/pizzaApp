@@ -21,7 +21,7 @@ namespace Pizza_App
     /// </summary>
     public partial class HomeVisistorUi : Page
     {
-        AdministratorDaoPizza pizzaDao = new AdministratorDaoPizza();
+        IAdministratorDaoPizza pizzaDao = FactoryMethods.GetAdministratorDaoObject();
         public HomeVisistorUi()
         {
             InitializeComponent();

@@ -33,7 +33,9 @@ namespace Pizza_App
             var textVerification = dataValidation.VerificationOfLengthOfString(UserIdTextBox.Text, PassWordTextBox.Password , x => MessageBox.Show(x));
             if(textVerification == true)
             {
+                //creation of the user from the data that the user had entered
                 var user = new User(UserIdTextBox.Text, PassWordTextBox.Password);
+
                 if (CheckerAccountExist.IsChecked == false && CheckerUserAccount.IsChecked == true)
                 {
                     var ifUserExist = dataValidation.VerificationUserAlreadyExist(user);

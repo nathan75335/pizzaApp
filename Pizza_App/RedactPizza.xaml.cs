@@ -69,13 +69,13 @@ namespace Pizza_App
             {
                 bool testIfAdded = Admin.AddNewPizzaToJsonFile(pizza);
 
-                if (testIfAdded == true)
+                if (testIfAdded == true && price != 0)
                 {
-                    MessageBox.Show($"The Pizza {pizza.Name} Has Successfully Been Updated.");
+                    MessageBox.Show($"The Pizza {pizza.Name} Has Successfully Been Added.");
                     this.Close();
                 }
                 else
-                    MessageBox.Show($"The Pizza {pizza.Name} Has Not Been Updated");
+                    MessageBox.Show($"The Pizza {pizza.Name} Has Not Been Added");
             }
         }
 
